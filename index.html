@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDU TRAVEL – Educational Travel Agency</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar py-1">
+  <div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <span class="text-warning small"><i class="bi bi-award-fill me-1"></i>40+ Years of Trusted Educational Travel Experience</span>
+      <div class="d-flex align-items-center gap-3">
+        <a href="tel:+919001236239" class="text-white text-decoration-none small"><i class="bi bi-telephone-fill me-1 text-warning"></i>+91 9001236239</a>
+        <a href="mailto:info@edu-travel.in" class="text-white text-decoration-none small"><i class="bi bi-envelope-fill me-1 text-warning"></i>info@edu-travel.in</a>
+        <div class="d-flex gap-2">
+          <a href="#" class="text-white small"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white small"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white small"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white small"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
+  <div class="container-fluid px-4">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div>
+        <img src="assets/imgs/SSA_LOGO_JPEG-removebg-preview.png" class="w-50" alt="logo">
+      </div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PACKAGES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">ITINERARY</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+      </ul>
+      <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div class="d-flex justify-content-end">
+        <img src="assets/imgs/SSA_LOGO_JPEG-removebg-preview.png" class="w-50" alt="">
+      </div>
+    </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section py-5" style="background: linear-gradient(100deg, #dceaf8 45%, #b8d4ef 100%);">
+  <div class="container-fluid px-4 py-3" style="position:relative; min-height:400px;">
+    <!-- Hero Image (right side) -->
+    <img
+      src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=900&q=80"
+      alt="Students on Educational Tour"
+      class="d-none d-md-block rounded-end mx-4"
+      style="position:absolute;right:0;top:0;height:100%;width:50%;object-fit:cover;border-radius:0 0 0 40px;"
+    />
+    <div class="row" style="position:relative;z-index:2;">
+      <div class="col-md-6">
+        <p class="hero-eyebrow mb-2">Inspiring Learning. Enriching Journeys.</p>
+        <h1 class="hero-title mb-3">
+          Educational Tours<br>
+          That Create Lifelong<br>
+          <span>Experiences</span>
+        </h1>
+        <p class="hero-desc mb-4">
+          With 40+ years of experience, we organize safe, educational and fun-filled tours for schools, colleges and institutions across India.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#packages" class="btn btn-hero-primary px-4 py-2">EXPLORE PACKAGES <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#contact" class="btn btn-hero-outline px-4 py-2">CONTACT US <i class="bi bi-person-lines-fill ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEARCH BAR ===== -->
+<section class="pb-3" style="background:#f5f8fc;">
+  <div class="container-fluid px-4">
+    <div class="search-bar p-3 rounded shadow">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-3 py-4">
+          <div class="d-flex align-items-center gap-2 ps-2">
+            <i class="bi bi-geo-alt text-warning fs-5"></i>
+            <div>
+              <div class="form-label fw-bold text-dark mb-0" style="font-size:12px;">Destination</div>
+              <input type="text" class="form-control border-0 p-0 shadow-none" placeholder="Where do you want to go?" style="font-size:13px;" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 divider ps-md-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-calendar3 text-warning fs-5"></i>
+            <div>
+              <div class="form-label fw-bold text-dark mb-0" style="font-size:12px;">Duration</div>
+              <select class="form-select" style="font-size:13px;color:#aaa;">
+                <option value="">Select Duration</option>
+                <option>1 Day</option>
+                <option>2 Days / 1 Night</option>
+                <option>3 Days / 2 Nights</option>
+                <option>4 Days / 3 Nights</option>
+                <option>5 Days / 4 Nights</option>
+                <option>Week-long Tour</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 divider ps-md-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-people text-warning fs-5"></i>
+            <div>
+              <div class="form-label fw-bold text-dark mb-0" style="font-size:12px;">Group Type</div>
+              <select class="form-select" style="font-size:13px;color:#aaa;">
+                <option value="">School / College / Institute</option>
+                <option>School Group</option>
+                <option>College Group</option>
+                <option>Institute / Corporate</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 text-end">
+          <button class="btn btn-send-inquiry w-100 py-2">SEND INQUIRY <i class="bi bi-arrow-right ms-1"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT US ===== -->
+<section id="about" class="py-5" style="background:#fff;">
+  <div class="container-fluid px-4">
+    <div class="row align-items-stretch g-0">
+      <!-- Left Text -->
+      <div class="col-lg-5 pe-lg-5 py-3">
+        <p class="section-eyebrow mb-2">ABOUT US</p>
+        <h2 class="section-title mb-3">Building Journeys<br>That Inspire Generations</h2>
+        <p style="font-size:13px;color:#555;" class="mb-4">
+          With more than 40 years of experience in the educational travel industry, we have successfully organized thousands of tours for schools, colleges and institutions across India. Our mission is to provide safe, well-planned and enriching travel experiences that help students learn beyond classrooms.
+        </p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-people-fill text-warning fs-5 mt-1"></i>
+              <div class="about-feature">
+                <div class="fw-bold" style="font-size:13px;color:#222;">Experienced &amp; Professional Team</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-journal-text text-warning fs-5 mt-1"></i>
+              <div class="about-feature">
+                <div class="fw-bold" style="font-size:13px;color:#222;">Customized Itineraries</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-shield-check text-warning fs-5 mt-1"></i>
+              <div class="about-feature">
+                <div class="fw-bold" style="font-size:13px;color:#222;">Safe, Secure &amp; Student-friendly Travel</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-currency-rupee text-warning fs-5 mt-1"></i>
+              <div class="about-feature">
+                <div class="fw-bold" style="font-size:13px;color:#222;">Value for Money &amp; Transparent Pricing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-hero-primary px-4 py-2">READ MORE <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <!-- Right Image + Stats -->
+      <div class="col-lg-7">
+        <img
+          src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=800&q=80"
+          alt="Students on Tour"
+          class="about-img"
+          style="height:280px;"
+        />
+        <!-- Stats Row -->
+        <div class="stats-box py-4 px-3 mt-0">
+          <div class="row text-center g-0">
+            <div class="col-6 col-md-3 border-end border-secondary py-2">
+              <div class="stat-icon mb-1"><i class="bi bi-trophy-fill"></i></div>
+              <div class="stat-num">40+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="col-6 col-md-3 border-end border-secondary py-2">
+              <div class="stat-icon mb-1"><i class="bi bi-building"></i></div>
+              <div class="stat-num">1000+</div>
+              <div class="stat-label">Institutions Served</div>
+            </div>
+            <div class="col-6 col-md-3 border-end border-secondary py-2">
+              <div class="stat-icon mb-1"><i class="bi bi-emoji-smile-fill"></i></div>
+              <div class="stat-num">25,000+</div>
+              <div class="stat-label">Happy Students</div>
+            </div>
+            <div class="col-6 col-md-3 py-2">
+              <div class="stat-icon mb-1"><i class="bi bi-patch-check-fill"></i></div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Safe &amp; Trusted Travel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="py-5" style="background:#f8fafd;">
+  <div class="container-fluid px-4">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow mb-1">WHAT WE OFFER</p>
+      <h2 class="section-title">Our Services</h2>
+      <div class="d-flex justify-content-center mt-2">
+        <span class="bg-warning rounded-pill" style="height:4px;width:60px;display:inline-block;"></span>
+        <span class="bg-dark rounded-pill mx-1" style="height:4px;width:10px;display:inline-block;"></span>
+        <span class="bg-warning rounded-pill" style="height:4px;width:20px;display:inline-block;"></span>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Service Cards -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-bus-front-fill"></i></div>
+          <div class="service-title mb-2">Educational Tours</div>
+          <p class="service-desc">Well-planned educational tours for students across India.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-buildings-fill"></i></div>
+          <div class="service-title mb-2">Industrial Visits</div>
+          <p class="service-desc">Industry exposure tours to enhance practical learning.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-bank2"></i></div>
+          <div class="service-title mb-2">School Excursions</div>
+          <p class="service-desc">Fun-filled and learning excursions for school students.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="service-title mb-2">College Trips</div>
+          <p class="service-desc">Customised trips and study tours for colleges and universities.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-house-fill"></i></div>
+          <div class="service-title mb-2">Transport &amp; Accommodation</div>
+          <p class="service-desc">Safe transport and comfortable stay arrangements.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="service-card text-center p-4 h-100">
+          <div class="service-icon mb-3"><i class="bi bi-people-fill"></i></div>
+          <div class="service-title mb-2">Group Travel Management</div>
+          <p class="service-desc">End-to-end management for large student groups.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POPULAR TOUR PACKAGES ===== -->
+<section id="packages" class="py-5" style="background:#fff;">
+  <div class="container-fluid px-4">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow mb-1">POPULAR TOURS</p>
+      <h2 class="section-title">Explore Our Educational Tour Packages</h2>
+    </div>
+    <div class="row g-4">
+      <!-- Delhi -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="package-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=500&q=80" alt="Delhi – India Gate" />
+          <div class="p-3">
+            <div class="package-city">DELHI</div>
+            <div class="package-duration mb-2">3 Days / 2 Nights</div>
+            <div class="package-price mb-3">₹4,999 /-</div>
+            <a href="#" class="btn btn-view py-2">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agra -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="package-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&q=80" alt="Agra – Taj Mahal" />
+          <div class="p-3">
+            <div class="package-city">AGRA</div>
+            <div class="package-duration mb-2">2 Days / 1 Night</div>
+            <div class="package-price mb-3">₹3,999 /-</div>
+            <a href="#" class="btn btn-view py-2">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <!-- Jaipur -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="package-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&q=80" alt="Jaipur – Hawa Mahal" />
+          <div class="p-3">
+            <div class="package-city">JAIPUR</div>
+            <div class="package-duration mb-2">3 Days / 2 Nights</div>
+            <div class="package-price mb-3">₹5,499 /-</div>
+            <a href="#" class="btn btn-view py-2">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <!-- Udaipur -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="package-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=500&q=80" alt="Udaipur Lake" />
+          <div class="p-3">
+            <div class="package-city">UDAIPUR</div>
+            <div class="package-duration mb-2">3 Days / 2 Nights</div>
+            <div class="package-price mb-3">₹6,499 /-</div>
+            <a href="#" class="btn btn-view py-2">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-view-all px-5 py-2">VIEW ALL PACKAGES <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section class="py-5" style="background:#f8fafd;">
+  <div class="container-fluid px-4">
+    <div class="text-center mb-4">
+      <p class="section-eyebrow mb-1">OUR PARTNERS</p>
+      <h2 class="section-title">Trusted By Leading Institutions</h2>
+    </div>
+    <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center justify-content-center g-4 py-2">
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-building text-warning" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">Delhi Public School<br><small>for Society</small></div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-mortarboard-fill text-primary" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">Ryan International School</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-bank2 text-warning" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">Amity International School</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-buildings text-danger" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">Podar International School</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-building-fill text-success" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">The Millennium School</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+              <div class="border rounded p-3 bg-white">
+                <i class="bi bi-bank text-info" style="font-size:28px;"></i>
+                <div class="fw-bold mt-2" style="font-size:12px;color:#333;">Seth Anandram Jaipuria School</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3 gap-2">
+        <button class="btn btn-sm btn-outline-secondary rounded-circle" data-bs-target="#partnersCarousel" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="btn btn-sm btn-warning rounded-circle" style="width:10px;height:10px;padding:0;"></button>
+        <button class="btn btn-sm btn-outline-secondary rounded-circle" style="width:10px;height:10px;padding:0;"></button>
+        <button class="btn btn-sm btn-outline-secondary rounded-circle" style="width:10px;height:10px;padding:0;"></button>
+        <button class="btn btn-sm btn-outline-secondary rounded-circle" data-bs-target="#partnersCarousel" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog" class="py-5" style="background:#fff;">
+  <div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-5">
+      <div>
+        <p class="section-eyebrow mb-1">FROM OUR BLOG</p>
+        <h2 class="section-title">Latest Travel &amp; Education Insights</h2>
+      </div>
+      <a href="#" class="btn btn-view-blogs px-4 py-2">VIEW ALL BLOGS</a>
+    </div>
+    <div class="row g-4">
+      <!-- Blog 1 -->
+      <div class="col-12 col-md-4">
+        <div class="blog-card shadow-sm h-100">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&q=80" alt="Blog 1" />
+            <span class="blog-tag" style="position:absolute;top:10px;left:10px;">Educational Trends</span>
+          </div>
+          <div class="p-3">
+            <div class="blog-title mb-2">Benefits of Educational Tours for Students</div>
+            <p class="blog-desc">Discover how educational tours help students learn beyond classrooms and build lifelong memories.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>May 10, 2024</span>
+              <a href="#" class="btn-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="col-12 col-md-4">
+        <div class="blog-card shadow-sm h-100">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&q=80" alt="Blog 2" />
+            <span class="blog-tag" style="position:absolute;top:10px;left:10px;">Travel Guide</span>
+          </div>
+          <div class="p-3">
+            <div class="blog-title mb-2">Top 10 Educational Destinations in India</div>
+            <p class="blog-desc">Explore the best destinations in India that offer a perfect blend of learning and adventure.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>May 10, 2024</span>
+              <a href="#" class="btn-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog 3 -->
+      <div class="col-12 col-md-4">
+        <div class="blog-card shadow-sm h-100">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=500&q=80" alt="Blog 3" />
+            <span class="blog-tag" style="position:absolute;top:10px;left:10px;">Travel Tips</span>
+          </div>
+          <div class="p-3">
+            <div class="blog-title mb-2">How to Plan a Successful School Trip</div>
+            <p class="blog-desc">Useful tips and checklist to plan a safe, fun and memorable school trip.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>May 05, 2024</span>
+              <a href="#" class="btn-read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="py-5 faq-section" style="background:#f8fafd;">
+  <div class="container-fluid px-4">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow mb-1">FREQUENTLY ASKED QUESTIONS</p>
+      <h2 class="section-title">Have Questions? We're Here to Help</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="accordion" id="faqLeft">
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What is the minimum group size for a tour?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+              <div class="accordion-body px-0">We typically accommodate groups of 20 or more students. However, we can customize packages for smaller groups upon request.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                How do I book a tour for my school or college?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+              <div class="accordion-body px-0">Simply fill out the inquiry form on our website or call us directly. Our team will contact you within 24 hours to discuss your requirements and provide a customized itinerary.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Is travel safe for students?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+              <div class="accordion-body px-0">Yes, absolutely. We have a dedicated safety protocol in place. All our tours include trained chaperones, first-aid kits, emergency contact support, and vetted accommodation and transport partners.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Can we customize our tour itinerary?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+              <div class="accordion-body px-0">Yes, all our tour packages are fully customizable. You can choose destinations, duration, activities, accommodation type, and budget as per your institution's needs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="accordion" id="faqRight">
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                What is included in the tour package?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+              <div class="accordion-body px-0">Our packages typically include transport, accommodation, meals, entry fees, a tour guide, and a dedicated travel manager. Specific inclusions vary by package.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                What is the cancellation policy?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+              <div class="accordion-body px-0">Cancellations made 30+ days before the tour date are eligible for a full refund. Cancellations between 15–30 days incur a 25% charge. Cancellations within 15 days are non-refundable.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 border-bottom mb-2 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                Do you provide insurance for students?
+              </button>
+            </h2>
+            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+              <div class="accordion-body px-0">Yes, we provide basic travel insurance coverage for all students on our tours. Additional insurance options are also available on request.</div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 bg-transparent">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed px-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                What payment methods do you accept?
+              </button>
+            </h2>
+            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+              <div class="accordion-body px-0">We accept bank transfers, UPI payments, cheques, demand drafts, and online payments via our payment gateway. Installment payment options are also available for schools.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS SECTION ═══ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="row align-items-stretch g-0">
+
+        <!-- LEFT: Static Image -->
+        <div class="col-lg-5 col-md-5">
+          <div class="testimonial-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=700&q=80"
+              alt="Happy tourist in Rajasthan traditional attire"
+            />
+          </div>
+        </div>
+
+        <!-- RIGHT: Slider content only -->
+        <div class="col-lg-7 col-md-7 testimonial-content-col">
+
+          <!-- Static heading (does NOT slide) -->
+          <span class="testimonial-eyebrow">Testimonials</span>
+          <h2 class="testimonial-section-title">What People Say</h2>
+
+          <!-- Slider wrapper -->
+          <div class="testimonial-slider-wrapper">
+            <div class="testimonial-track" id="testimonialTrack">
+
+              <!-- Slide 1 -->
+              <div class="testimonial-slide w-100" role="group" aria-label="Testimonial 1 of 3">
+                <div class="quote-row">
+                  <span class="quote-icon">"</span>
+                  <div class="star-row" aria-label="5 out of 5 stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="review-text">
+                  "Exploring the beautiful landscapes of Rajasthan Mewad with Mt. Abu was like stepping into a fairy tale. The scenic beauty of Mt. Abu and the cultural heritage of Rajasthan complemented each other perfectly. The accommodations were comfortable, and the local cuisine was a treat for the taste buds."
+                </p>
+                <div class="reviewer-name">Manish Kumar</div>
+                <div class="reviewer-role">Tourist</div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-slide w-100" role="group" aria-label="Testimonial 2 of 3">
+                <div class="quote-row">
+                  <span class="quote-icon">"</span>
+                  <div class="star-row" aria-label="5 out of 5 stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="review-text">
+                  "Our Golden Triangle tour of Delhi, Agra, and Jaipur was beyond our expectations. The iconic Taj Mahal, the bustling streets of Delhi, and the majestic forts of Jaipur – every moment was magical. The guides were passionate, and the whole journey felt like a journey through history. Thank you for the wonderful memories!"
+                </p>
+                <div class="reviewer-name">Shankar Lal</div>
+                <div class="reviewer-role">Tourist</div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-slide w-100" role="group" aria-label="Testimonial 3 of 3">
+                <div class="quote-row">
+                  <span class="quote-icon">"</span>
+                  <div class="star-row" aria-label="4 out of 5 stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+                <p class="review-text">
+                  "The Udaipur heritage tour was simply breathtaking. Every palace, every lake, every sunset felt like a painting come to life. The team handled all logistics flawlessly – from hotel check-ins to guided tours – leaving us with nothing to worry about and everything to enjoy. Highly recommended!"
+                </p>
+                <div class="reviewer-name">Priya Sharma</div>
+                <div class="reviewer-role">Tourist</div>
+              </div>
+
+            </div><!-- /track -->
+          </div><!-- /slider-wrapper -->
+
+          <!-- Dots navigation -->
+          <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation">
+            <button class="dot active" data-index="0" role="tab" aria-selected="true" aria-label="Go to testimonial 1"></button>
+            <button class="dot" data-index="1" role="tab" aria-selected="false" aria-label="Go to testimonial 2"></button>
+            <button class="dot" data-index="2" role="tab" aria-selected="false" aria-label="Go to testimonial 3"></button>
+          </div>
+
+        </div><!-- /right col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+<!-- ===== CTA / CONTACT FORM ===== -->
+<section id="contact" class="cta-section py-5">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center g-4">
+      <!-- Left Text -->
+      <div class="col-lg-4">
+        <h2 class="cta-title mb-3">Plan Your Next Educational Journey With Us</h2>
+        <p class="cta-sub">Get in touch today for customized tour packages.</p>
+      </div>
+      <!-- Form -->
+      <div class="col-lg-5">
+        <div class="row g-3 cta-form">
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" />
+          </div>
+          <div class="col-12 col-md-6">
+            <input type="tel" class="form-control" placeholder="Mobile Number" />
+          </div>
+          <div class="col-12 col-md-6">
+            <input type="email" class="form-control" placeholder="Email Address" />
+          </div>
+          <div class="col-12 col-md-6">
+            <textarea class="form-control" rows="1" placeholder="Your Message" style="resize:none;"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-cta-submit px-5 py-2 w-100">SEND INQUIRY <i class="bi bi-arrow-right ms-2"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Right Image -->
+      <div class="col-lg-3 d-none d-lg-block">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80" alt="Journey" class="img-fluid rounded" style="max-height:200px;object-fit:cover;width:100%;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="pt-5 pb-0">
+  <div class="container-fluid px-4">
+    <div class="row g-4 pb-4">
+      <!-- Brand -->
+      <div class="col-12 col-md-3">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div>
+        <img src="assets/imgs/SSA_LOGO_JPEG-removebg-preview.png" class="w-50" alt="logo">
+      </div>
+    </a>
+        </div>
+        <p class="footer-desc mb-4">For over 40 years, we have been creating enriching educational travel experiences for students and institutions across India.</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-6 col-md-2">
+        <h6 class="mb-3">QUICK LINKS</h6>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="#">Packages</a>
+        <a href="#">Gallery</a>
+        <a href="#">Itinerary</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <!-- Our Services -->
+      <div class="col-6 col-md-2">
+        <h6 class="mb-3">OUR SERVICES</h6>
+        <a href="#">Educational Tours</a>
+        <a href="#">Industrial Visits</a>
+        <a href="#">School Excursions</a>
+        <a href="#">College Trips</a>
+        <a href="#">Group Travel Management</a>
+        <a href="#">Transport &amp; Accommodation</a>
+      </div>
+      <!-- Contact Info -->
+      <div class="col-12 col-md-3">
+        <h6 class="mb-3">CONTACT INFO</h6>
+        <a href="tel:91-9414018109"><i class="bi bi-telephone-fill me-2 text-warning"></i>91-9414018109</a>
+        <a href="mailto:info@edu-travel.in"><i class="bi bi-envelope-fill me-2 text-warning"></i>info@edu-travel.in</a>
+        <div class="d-flex align-items-start gap-2 mb-2">
+          <i class="bi bi-geo-alt-fill text-warning mt-1"></i>
+          <span class="footer-desc">SARVA SIDDHA ADVENTURES PVT. LTD.<br> BB-6, Anita Colony, Bajaj Nagar, Jaipur,
+<br>Rajasthan – 302015</span>
+        </div>
+        <div class="">
+          <p class="footer-desc mb-0 d-flex "><i class="bi bi-receipt me-2 text-warning"></i><span class="fw-semibold">GST NO: </span> <a href="#" class="mx-1">08AATCS6434J1ZO</a></p>
+          <p class="footer-desc mb-1 d-flex"><i class="bi bi-card-heading me-2 text-warning"></i><span class="fw-semibold">PAN NO:</span> <a href="#" class="mx-1">AATCS6434J</a></p>
+        </div>
+        <a href="#"><i class="bi bi-clock-fill me-2 text-warning"></i>Mon–Sat: 10:00 AM – 8:00 PM</a>
+      </div>
+      <!-- Map -->
+      <div class="col-12 col-md-2">
+        <h6 class="mb-3">OUR LOCATION</h6>
+        <div class="rounded overflow-hidden border border-secondary" style="height:120px;background:#1a3a5c;display:flex;align-items:center;justify-content:center;">
+          <div class="text-center">
+            <i class="bi bi-geo-alt-fill text-warning" style="font-size:36px;"></i>
+            <div class="footer-desc mt-1" style="font-size:11px;">Jaipur, Rajasthan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom py-3 mt-2 text-center">
+    <div class="container-fluid px-4">
+      <span>&copy; 2024 EDU TRAVEL. All Rights Reserved. | Designed for Educational Excellence</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp & Call Buttons -->
+<a href="https://wa.me/919001236239" class="float-btn float-wa-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<a href="tel:+919001236239" class="float-btn float-call-btn float-call" title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/testimonials.js"></script>
+</body>
+</html>
