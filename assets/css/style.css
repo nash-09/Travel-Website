@@ -740,25 +740,317 @@ body { font-family: 'Poppins', sans-serif; }
     /* ══════════════════════════════════════
        RESPONSIVE
     ══════════════════════════════════════ */
-    @media (max-width: 991.98px) {
-      .hero-heading   { font-size: 2.3rem; }
-      .hero-slide     { padding: 45px 0 55px; }
-      .hero-img-wrap img { height: 320px; }
-    }
+    /* ══════════════════════════════════════
+   HERO SLIDER — RESPONSIVE ADDITIONS ONLY
+   Add these rules AFTER your existing hero CSS.
+   Nothing here overrides desktop styles.
+══════════════════════════════════════ */
 
-    @media (max-width: 767.98px) {
-      .hero-slide     { padding: 40px 0 60px; }
-      .hero-text-col  { padding-right: 0; text-align: center; margin-bottom: 2.2rem; }
-      .hero-heading   { font-size: 1.9rem; }
-      .hero-desc      { margin-left: auto; margin-right: auto; }
-      .hero-btn-row   { justify-content: center; }
-      .hero-img-wrap img { height: 260px; border-radius: var(--radius-img); }
-      .img-badge      { left: 10px; bottom: 14px; }
-    }
+/* ══════════════════════════════════════════════════════
+   HERO SLIDER — RESPONSIVE ADDITIONS
+   Paste this AFTER your existing hero CSS.
+   Tablet (≤991.98px) and desktop are untouched.
+   Only ≤767.98px and ≤575.98px rules are here.
+══════════════════════════════════════════════════════ */
 
-    @media (max-width: 575.98px) {
-      .hero-heading   { font-size: 1.6rem; }
-      .hero-img-wrap img { height: 220px; }
-      .btn-primary-hero,
-      .btn-outline-hero { font-size: 0.72rem; padding: 0.6rem 1.1rem; }
-    }
+/* ─────────────────────────────────────────────────────
+   TABLET  ≤ 991.98px  — stacks columns, centres text
+───────────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+  .hero-slide .row {
+    flex-direction: column;
+  }
+  .hero-text-col,
+  .hero-img-col {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .hero-text-col {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    order: 1;
+  }
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-btn-row {
+    justify-content: center;
+  }
+  .hero-img-col {
+    order: 2;
+  }
+  .hero-img-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .img-badge {
+    left: 10px;
+    bottom: 16px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   MOBILE  ≤ 767.98px
+───────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+
+  /* ── Banner & track ── */
+  .hero-banner {
+    overflow-x: hidden;
+  }
+
+  /* ── Slide shell ── */
+  .hero-slide {
+    padding: 32px 0 70px;
+    min-height: auto;
+  }
+
+  /* ── Text column ── */
+  .hero-text-col {
+    text-align: center;
+    padding: 0;
+    order: 1;
+    margin-bottom: 1.6rem;
+  }
+
+  /* ── Tagline ── */
+  .hero-tagline {
+    font-size: 0.78rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* ── Heading ── */
+  .hero-heading {
+    font-size: 1.75rem;
+    line-height: 1.18;
+    margin-bottom: 0;
+  }
+
+  /* ── Description ── */
+  .hero-desc {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    max-width: 92%;
+    margin: 0.75rem auto 1.4rem;
+  }
+
+  /* ── Buttons: row, centred, wrap on very small ── */
+  .hero-btn-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem;
+    width: 100%;
+  }
+
+  .btn-primary-hero,
+  .btn-outline-hero {
+    font-size: 0.75rem;
+    padding: 0.62rem 1.25rem;
+    letter-spacing: 0.06em;
+    flex: 1 1 140px;
+    max-width: 200px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ── Image column ── */
+  .hero-img-col {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-img-wrap {
+    position: relative;
+    width: 92%;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .hero-img-wrap img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 16px;
+  }
+
+  /* ── Floating badge ── */
+  .img-badge {
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    padding: 0.45rem 0.75rem;
+    gap: 0.45rem;
+    border-radius: 10px;
+  }
+
+  .img-badge-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    flex-shrink: 0;
+  }
+
+  .img-badge-icon i {
+    font-size: 0.9rem;
+  }
+
+  .img-badge-num {
+    font-size: 0.85rem;
+    line-height: 1.1;
+  }
+
+  .img-badge-label {
+    font-size: 0.6rem;
+    line-height: 1.3;
+  }
+
+  /* ── Arrows: always visible on touch ── */
+  .hero-arrow {
+    opacity: 1;
+    pointer-events: auto;
+    width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+
+  .hero-arrow:hover {
+    transform: scale(1.08);
+  }
+
+  .hero-arrow-prev {
+    left: calc(50% - 52px);
+  }
+
+  .hero-arrow-next {
+    right: calc(50% - 52px);
+  }
+
+  /* ── Dots ── */
+  .hero-dots {
+    bottom: 26px;
+    gap: 6px;
+  }
+
+  .hero-dot {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+  }
+
+  .hero-dot.active {
+    width: 22px;
+    border-radius: 4px;
+  }
+
+  /* ── Progress bar ── */
+  .hero-progress {
+    height: 2px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   SMALL MOBILE  ≤ 575.98px
+───────────────────────────────────────────────────── */
+@media (max-width: 575.98px) {
+
+  /* ── Slide ── */
+  .hero-slide {
+    padding: 24px 0 68px;
+  }
+
+  /* ── Heading ── */
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+
+  /* ── Description ── */
+  .hero-desc {
+    font-size: 0.84rem;
+    max-width: 20%;
+  }
+
+  /* ── Buttons: full-width stacked ── */
+  .hero-btn-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0 1rem;
+  }
+
+  .btn-primary-hero,
+  .btn-outline-hero {
+    width: 100%;
+    max-width: 100px;
+    flex: none;
+    font-size: 0.72rem;
+    padding: 0.65rem 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ── Image ── */
+  .hero-img-wrap {
+    width: 20%;
+  }
+
+  .hero-img-wrap img {
+    height: 200px;
+  }
+
+  /* ── Badge: tighter ── */
+  .img-badge {
+    left: 8px;
+    bottom: 10px;
+    padding: 0.38rem 0.6rem;
+  }
+
+  .img-badge-num {
+    font-size: 0.8rem;
+  }
+
+  .img-badge-label {
+    font-size: 0.57rem;
+  }
+
+  /* ── Tagline ── */
+  .hero-tagline {
+    font-size: 0.74rem;
+  }
+
+  /* ── Arrows: tighter ── */
+  .hero-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .hero-arrow-prev {
+    left: calc(50% - 46px);
+  }
+
+  .hero-arrow-next {
+    right: calc(50% - 46px);
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   TOUCH-ONLY SAFETY NET
+   Reveals arrows on any real touch device regardless
+   of screen width (no :hover state on mobile browsers)
+───────────────────────────────────────────────────── */
+@media (hover: none) and (pointer: coarse) {
+  .hero-arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

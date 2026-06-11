@@ -505,7 +505,7 @@
       .hero-title {
         font-size: 1.5rem;
       }
-      .advantage-grid {
+      /* .advantage-grid {
         grid-template-columns: 1fr;
-      }
+      } */
     }
