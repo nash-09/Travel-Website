@@ -78,3 +78,7 @@
       goTo(0);
       startAuto();
     })();
+
+
+
+    // Banner Slider

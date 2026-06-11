@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDU TRAVEL – Hero Slider Banner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+
+    /* ══════════════════════════════════════
+       ROOT VARIABLES  (matches your site)
+    ══════════════════════════════════════ */
+    :root {
+      --clr-navy:        #0d1f4e;
+      --clr-navy-dark:   #081540;
+      --clr-accent:      #e8930a;
+      --clr-accent-hover:#d07d06;
+      --clr-bg-light:    #dce8f5;
+      --clr-white:       #ffffff;
+      --clr-muted:       #5a6a85;
+      --clr-italic:      #3a4f72;
+      --radius-img:      18px;
+      --transition:      0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ══════════════════════════════════════
+       BASE
+    ══════════════════════════════════════ */
+    *  { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--clr-white);
+      overflow-x: hidden;
+    }
+
+    /* ══════════════════════════════════════
+       BANNER OUTER
+    ══════════════════════════════════════ */
+    .hero-banner {
+      background: var(--clr-bg-light);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ══════════════════════════════════════
+       SLIDES TRACK
+    ══════════════════════════════════════ */
+    .hero-track {
+      display: flex;
+      transition: transform var(--transition);
+      will-change: transform;
+    }
+
+    /* ══════════════════════════════════════
+       SINGLE SLIDE
+    ══════════════════════════════════════ */
+    .hero-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+      padding: 60px 0 50px;
+      position: relative;
+    }
+
+    /* ══════════════════════════════════════
+       LEFT: TEXT CONTENT
+    ══════════════════════════════════════ */
+    .hero-text-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 2rem;
+    }
+
+    .hero-tagline {
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--clr-italic);
+      margin-bottom: 0.9rem;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-heading {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--clr-navy);
+      line-height: 1.12;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-heading-accent {
+      color: var(--clr-accent);
+      display: block;
+    }
+
+    .hero-desc {
+      font-size: 0.97rem;
+      color: var(--clr-muted);
+      line-height: 1.75;
+      max-width: 440px;
+      margin-top: 1rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ══════════════════════════════════════
+       BUTTONS
+    ══════════════════════════════════════ */
+    .hero-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .btn-primary-hero {
+      background: var(--clr-navy);
+      color: var(--clr-white);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 2px solid var(--clr-navy);
+      border-radius: 4px;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.25s, color 0.25s, transform 0.2s;
+    }
+
+    .btn-primary-hero:hover {
+      background: var(--clr-navy-dark);
+      border-color: var(--clr-navy-dark);
+      color: var(--clr-white);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-hero {
+      background: transparent;
+      color: var(--clr-navy);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 2px solid var(--clr-navy);
+      border-radius: 4px;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.25s, color 0.25s, transform 0.2s;
+    }
+
+    .btn-outline-hero:hover {
+      background: var(--clr-navy);
+      color: var(--clr-white);
+      transform: translateY(-2px);
+    }
+
+    /* ══════════════════════════════════════
+       RIGHT: IMAGE COLUMN
+    ══════════════════════════════════════ */
+    .hero-img-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-img-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+    }
+
+    .hero-img-wrap img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: var(--radius-img) var(--radius-img) var(--radius-img) 0;
+      display: block;
+      box-shadow: 0 16px 48px rgba(13, 31, 78, 0.18);
+    }
+
+    /* floating badge */
+    .img-badge {
+      position: absolute;
+      bottom: 22px;
+      left: -20px;
+      background: var(--clr-white);
+      border-radius: 12px;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      box-shadow: 0 6px 24px rgba(13, 31, 78, 0.15);
+    }
+
+    .img-badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--clr-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .img-badge-icon i {
+      color: var(--clr-white);
+      font-size: 1rem;
+    }
+
+    .img-badge-num {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--clr-navy);
+      line-height: 1;
+    }
+
+    .img-badge-label {
+      font-size: 0.7rem;
+      color: var(--clr-muted);
+      font-weight: 500;
+    }
+
+    /* ══════════════════════════════════════
+       SLIDE-SPECIFIC ACCENT COLOURS
+       (slide 1 default, slides 2 & 3 vary slightly)
+    ══════════════════════════════════════ */
+    .hero-slide.slide-2 .hero-heading-accent { color: #1e8a44; }
+    .hero-slide.slide-2 .btn-primary-hero    { background: #1e8a44; border-color: #1e8a44; }
+    .hero-slide.slide-2 .btn-primary-hero:hover { background: #166c35; border-color: #166c35; }
+    .hero-slide.slide-2 .img-badge-icon      { background: #1e8a44; }
+
+    .hero-slide.slide-3 .hero-heading-accent { color: #b5451b; }
+    .hero-slide.slide-3 .btn-primary-hero    { background: #b5451b; border-color: #b5451b; }
+    .hero-slide.slide-3 .btn-primary-hero:hover { background: #8f3514; border-color: #8f3514; }
+    .hero-slide.slide-3 .img-badge-icon      { background: #b5451b; }
+
+    /* ══════════════════════════════════════
+       NAVIGATION ARROWS
+    ══════════════════════════════════════ */
+    .hero-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--clr-white);
+      color: var(--clr-navy);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(13,31,78,0.18);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .hero-banner:hover .hero-arrow {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .hero-arrow:hover {
+      background: var(--clr-navy);
+      color: var(--clr-white);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .hero-arrow-prev { left: 14px; }
+    .hero-arrow-next { right: 14px; }
+
+    /* ══════════════════════════════════════
+       DOTS
+    ══════════════════════════════════════ */
+    .hero-dots {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 20;
+    }
+
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(13,31,78,0.25);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.3s, width 0.3s, border-radius 0.3s;
+    }
+
+    .hero-dot.active {
+      width: 28px;
+      border-radius: 4px;
+      background: var(--clr-navy);
+    }
+
+    /* ══════════════════════════════════════
+       PROGRESS BAR
+    ══════════════════════════════════════ */
+    .hero-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background: var(--clr-accent);
+      width: 0%;
+      transition: width 0.1s linear;
+      z-index: 30;
+    }
+
+    /* ══════════════════════════════════════
+       CONTENT ANIMATION
+    ══════════════════════════════════════ */
+    .hero-slide .hero-text-col > * {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .hero-slide.is-active .hero-text-col > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-slide.is-active .hero-tagline   { transition-delay: 0.05s; }
+    .hero-slide.is-active .hero-heading   { transition-delay: 0.15s; }
+    .hero-slide.is-active .hero-desc      { transition-delay: 0.25s; }
+    .hero-slide.is-active .hero-btn-row   { transition-delay: 0.35s; }
+
+    .hero-slide .hero-img-wrap {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.65s ease 0.2s, transform 0.65s ease 0.2s;
+    }
+
+    .hero-slide.is-active .hero-img-wrap {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════ */
+    @media (max-width: 991.98px) {
+      .hero-heading   { font-size: 2.3rem; }
+      .hero-slide     { padding: 45px 0 55px; }
+      .hero-img-wrap img { height: 320px; }
+    }
+
+    @media (max-width: 767.98px) {
+      .hero-slide     { padding: 40px 0 60px; }
+      .hero-text-col  { padding-right: 0; text-align: center; margin-bottom: 2.2rem; }
+      .hero-heading   { font-size: 1.9rem; }
+      .hero-desc      { margin-left: auto; margin-right: auto; }
+      .hero-btn-row   { justify-content: center; }
+      .hero-img-wrap img { height: 260px; border-radius: var(--radius-img); }
+      .img-badge      { left: 10px; bottom: 14px; }
+    }
+
+    @media (max-width: 575.98px) {
+      .hero-heading   { font-size: 1.6rem; }
+      .hero-img-wrap img { height: 220px; }
+      .btn-primary-hero,
+      .btn-outline-hero { font-size: 0.72rem; padding: 0.6rem 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     HERO SLIDER BANNER
+════════════════════════════════════════════ -->
+<section class="hero-banner position-relative" id="heroBanner">
+
+  <!-- Progress bar -->
+  <div class="hero-progress" id="heroProgress"></div>
+
+  <!-- Track -->
+  <div class="hero-track" id="heroTrack">
+
+    <!-- ─── SLIDE 1 ─── -->
+    <div class="hero-slide slide-1 is-active">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 hero-text-col">
+            <p class="hero-tagline">Inspiring Learning. Enriching Journeys.</p>
+            <h1 class="hero-heading">
+              Educational Tours<br>That Create Lifelong
+              <span class="hero-heading-accent">Experiences</span>
+            </h1>
+            <p class="hero-desc">
+              With 40+ years of experience, we organize safe, educational and fun-filled tours for schools, colleges and institutions across India.
+            </p>
+            <div class="hero-btn-row">
+              <a href="#packages" class="btn-primary-hero">
+                Explore Packages <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-outline-hero">
+                Contact Us <i class="bi bi-person-lines-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-img-col">
+            <div class="hero-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=900&q=80"
+                alt="Students on an educational tour"
+              />
+              <div class="img-badge">
+                <div class="img-badge-icon"><i class="bi bi-people-fill"></i></div>
+                <div>
+                  <div class="img-badge-num">25,000+</div>
+                  <div class="img-badge-label">Happy Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SLIDE 2 ─── -->
+    <div class="hero-slide slide-2">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 hero-text-col">
+            <p class="hero-tagline">Discover India's Heritage &amp; Culture.</p>
+            <h1 class="hero-heading">
+              Explore India's<br>Most Iconic
+              <span class="hero-heading-accent">Destinations</span>
+            </h1>
+            <p class="hero-desc">
+              From the Taj Mahal to the forts of Rajasthan — we craft unforgettable journeys to 200+ destinations that blend history, culture, and adventure.
+            </p>
+            <div class="hero-btn-row">
+              <a href="#packages" class="btn-primary-hero">
+                View Packages <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#about" class="btn-outline-hero">
+                About Us <i class="bi bi-info-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-img-col">
+            <div class="hero-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=900&q=80"
+                alt="India Gate Delhi"
+              />
+              <div class="img-badge">
+                <div class="img-badge-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="img-badge-num">200+</div>
+                  <div class="img-badge-label">Destinations Across India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SLIDE 3 ─── -->
+    <div class="hero-slide slide-3">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 hero-text-col">
+            <p class="hero-tagline">Trusted by Schools &amp; Colleges Since 1984.</p>
+            <h1 class="hero-heading">
+              Safe, Guided &amp;<br>Fully Managed
+              <span class="hero-heading-accent">School Trips</span>
+            </h1>
+            <p class="hero-desc">
+              Over 1,000 institutions trust us for fully managed school excursions. Trained guides, vetted transport and 24/7 support — every step of the way.
+            </p>
+            <div class="hero-btn-row">
+              <a href="#contact" class="btn-primary-hero">
+                Send Inquiry <i class="bi bi-send"></i>
+              </a>
+              <a href="#services" class="btn-outline-hero">
+                Our Services <i class="bi bi-grid"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-img-col">
+            <div class="hero-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=900&q=80"
+                alt="Students travelling together"
+              />
+              <div class="img-badge">
+                <div class="img-badge-icon"><i class="bi bi-building"></i></div>
+                <div>
+                  <div class="img-badge-num">1,000+</div>
+                  <div class="img-badge-label">Institutions Served</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /track -->
+
+  <!-- Arrow: Prev -->
+  <button class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous slide">
+    <i class="bi bi-chevron-left"></i>
+  </button>
+
+  <!-- Arrow: Next -->
+  <button class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next slide">
+    <i class="bi bi-chevron-right"></i>
+  </button>
+
+  <!-- Dots -->
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slide navigation">
+    <button class="hero-dot active" data-index="0" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+    <button class="hero-dot"        data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+    <button class="hero-dot"        data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+  </div>
+
+</section>
+<!-- /HERO BANNER -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  const track     = document.getElementById('heroTrack');
+  const slides    = track.querySelectorAll('.hero-slide');
+  const dots      = document.querySelectorAll('#heroDots .hero-dot');
+  const prevBtn   = document.getElementById('heroPrev');
+  const nextBtn   = document.getElementById('heroNext');
+  const progressEl= document.getElementById('heroProgress');
+
+  const TOTAL     = slides.length;
+  const INTERVAL  = 5000;   // ms between auto-slides
+  const FPS       = 60;
+
+  let current     = 0;
+  let autoTimer   = null;
+  let progTimer   = null;
+  let progStart   = null;
+  let paused      = false;
+
+  /* ── go to slide ─────────────────── */
+  function goTo(index) {
+    // Deactivate current
+    slides[current].classList.remove('is-active');
+    dots[current].classList.remove('active');
+    dots[current].setAttribute('aria-selected', 'false');
+
+    current = (index + TOTAL) % TOTAL;
+
+    // Activate new
+    track.style.transform = `translateX(-${current * 100}%)`;
+    slides[current].classList.add('is-active');
+    dots[current].classList.add('active');
+    dots[current].setAttribute('aria-selected', 'true');
+  }
+
+  /* ── progress bar animation ──────── */
+  function startProgress() {
+    clearInterval(progTimer);
+    progressEl.style.transition = 'none';
+    progressEl.style.width = '0%';
+
+    progStart = performance.now();
+
+    progTimer = setInterval(() => {
+      if (paused) return;
+      const elapsed = performance.now() - progStart;
+      const pct = Math.min((elapsed / INTERVAL) * 100, 100);
+      progressEl.style.transition = 'none';
+      progressEl.style.width = pct + '%';
+    }, 1000 / FPS);
+  }
+
+  /* ── auto-advance ────────────────── */
+  function startAuto() {
+    clearInterval(autoTimer);
+    startProgress();
+    autoTimer = setInterval(() => {
+      if (!paused) {
+        goTo(current + 1);
+        startProgress();
+      }
+    }, INTERVAL);
+  }
+
+  function resetAuto() {
+    startAuto();
+  }
+
+  /* ── dot clicks ──────────────────── */
+  dots.forEach(dot => {
+    dot.addEventListener('click', function () {
+      goTo(parseInt(this.dataset.index));
+      resetAuto();
+    });
+  });
+
+  /* ── arrow clicks ────────────────── */
+  prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+  nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+  /* ── keyboard ────────────────────── */
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { goTo(current + 1); resetAuto(); }
+    if (e.key === 'ArrowLeft')  { goTo(current - 1); resetAuto(); }
+  });
+
+  /* ── touch / swipe ───────────────── */
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? goTo(current + 1) : goTo(current - 1);
+      resetAuto();
+    }
+  }, { passive: true });
+
+  /* ── pause on hover ──────────────── */
+  const banner = document.getElementById('heroBanner');
+  banner.addEventListener('mouseenter', () => { paused = true; });
+  banner.addEventListener('mouseleave', () => {
+    paused = false;
+    progStart = performance.now() - (parseFloat(progressEl.style.width) / 100 * INTERVAL);
+  });
+
+  /* ── init ─────────────────────────── */
+  goTo(0);
+  startAuto();
+})();
+</script>
+</body>
+</html>
