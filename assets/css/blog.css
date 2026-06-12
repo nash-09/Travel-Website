@@ -20,38 +20,6 @@
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; }
 
-    /* ─── TOP BAR ──────────────────────────────── */
-    .topbar {
-      background: var(--navy);
-      color: #b0bec5;
-      font-size: 13px;
-      padding: 8px 0;
-    }
-    .topbar a { color: #b0bec5; transition: color .2s; }
-    .topbar a:hover { color: var(--gold); }
-    .topbar .trophy { color: var(--gold); }
-    .topbar .social-icon { width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,.1); display: inline-flex; align-items: center; justify-content: center; transition: background .2s; }
-    .topbar .social-icon:hover { background: var(--gold); color: var(--navy); }
-
-    /* ─── NAVBAR ────────────────────────────────── */
-    .main-nav {
-      background: var(--white);
-      box-shadow: 0 2px 12px rgba(13,31,60,.1);
-      padding: 14px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1030;
-    }
-    .navbar-brand .brand-name { font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); font-weight: 900; }
-    .navbar-brand .brand-sub { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
-    .brand-logo { width: 44px; height: 44px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .brand-logo i { color: var(--gold); font-size: 22px; }
-    .main-nav .nav-link { font-weight: 700; font-size: 13.5px; color: var(--navy); letter-spacing: .03em; padding: 6px 14px !important; transition: color .2s; }
-    .main-nav .nav-link:hover,
-    .main-nav .nav-link.active { color: var(--gold); }
-    .btn-enquire { background: var(--gold); color: var(--navy); font-weight: 800; font-size: 13.5px; border-radius: 6px; padding: 9px 22px; border: none; transition: background .2s, transform .15s; }
-    .btn-enquire:hover { background: var(--gold-dark); transform: translateY(-1px); }
-
     /* ─── HERO BANNER ────────────────────────────── */
     .blog-hero {
       background: linear-gradient(120deg, #e8eef6 0%, #f4f7fb 55%, #dde7f3 100%);
@@ -135,28 +103,6 @@
     .newsletter-box input::placeholder { color: rgba(255,255,255,.45); }
     .newsletter-box .btn-subscribe { background: var(--gold); color: var(--navy); font-weight: 800; font-size: 13.5px; border: none; border-radius: 6px; padding: 10px; width: 100%; letter-spacing: .05em; cursor: pointer; transition: background .2s; }
     .newsletter-box .btn-subscribe:hover { background: var(--gold-dark); }
-
-    /* ─── FOOTER ──────────────────────────────────── */
-    .site-footer { background: var(--navy); color: #b0bec5; padding: 56px 0 0; }
-    .site-footer .footer-brand-name { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; font-weight: 900; }
-    .site-footer .footer-tagline { font-size: 12px; color: var(--gold); }
-    .site-footer p { font-size: 13px; line-height: 1.7; color: #90a0b4; }
-    .site-footer .footer-social a { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,.1); display: inline-flex; align-items: center; justify-content: center; color: #b0bec5; font-size: 15px; transition: background .2s, color .2s; }
-    .site-footer .footer-social a:hover { background: var(--gold); color: var(--navy); }
-    .footer-heading { color: var(--white); font-weight: 800; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 16px; }
-    .footer-links { list-style: none; padding: 0; margin: 0; }
-    .footer-links li { margin-bottom: 9px; }
-    .footer-links a { color: #90a0b4; font-size: 13.5px; transition: color .2s; }
-    .footer-links a:hover { color: var(--gold); }
-    .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; font-size: 13.5px; color: #90a0b4; margin-bottom: 10px; }
-    .footer-contact-item i { color: var(--gold); font-size: 15px; margin-top: 2px; flex-shrink: 0; }
-    .footer-map-placeholder { width: 100%; height: 120px; background: #1e2f4a; border-radius: var(--radius); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-    .footer-map-placeholder::before { content: ''; position: absolute; inset: 0; background: url('https://maps.googleapis.com/maps/api/staticmap?center=Jaipur,Rajasthan&zoom=13&size=300x120&markers=color:orange%7CJaipur,Rajasthan&key=') no-repeat center/cover; opacity: .4; }
-    .footer-map-placeholder i { color: #e03; font-size: 30px; position: relative; z-index: 1; }
-    .footer-bottom { margin-top: 40px; border-top: 1px solid rgba(255,255,255,.08); padding: 18px 0; }
-    .footer-bottom p { font-size: 13px; color: #607080; margin: 0; }
-    .footer-bottom a { color: #607080; transition: color .2s; }
-    .footer-bottom a:hover { color: var(--gold); }
 
     /* ─── WHATSAPP FLOAT ────────────────────────── */
     .whatsapp-float { position: fixed; bottom: 28px; right: 28px; width: 52px; height: 52px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,.45); z-index: 2000; transition: transform .2s; }

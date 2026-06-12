@@ -6,21 +6,22 @@
   <title>EDU TRAVEL – Comprehensive Educational Travel Services</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+  
 </head>
 <body>
 
 <!-- ===== TOP BAR ===== -->
-<div class="top-bar py-1">
+<div class="top-bar py-3">
   <div class="container-fluid px-4">
-    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 fs-6">
       <span class="text-warning small"><i class="bi bi-award-fill me-1"></i>40+ Years of Trusted Educational Travel Experience</span>
       <div class="d-flex align-items-center gap-3">
         <a href="tel:+919001236239" class="text-white text-decoration-none small"><i class="bi bi-telephone-fill me-1 text-warning"></i>+91-9414018109</a>
-        <a href="mailto:info@edu-travel.in" class="text-white text-decoration-none small"><i class="bi bi-envelope-fill me-1 text-warning"></i>info@edu-travel.in</a>
-        <div class="d-flex gap-2">
+        <a href="mailto:info@edu-travel.in" class="text-white text-decoration-none small"><i class="bi bi-envelope-fill me-1 text-warning"></i>info@ss-travel.in</a>
+        <div class="d-flex gap-2 font-size-20">
           <a href="#" class="text-white small"><i class="bi bi-facebook"></i></a>
           <a href="#" class="text-white small"><i class="bi bi-instagram"></i></a>
           <a href="#" class="text-white small"><i class="bi bi-youtube"></i></a>
@@ -32,10 +33,10 @@
 </div>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-0">
   <div class="container-fluid px-4">
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <a class="navbar-brand d-flex align-items-center gap-2 py-0" href="index.html">
       <div>
         <img src="assets/imgs/SSA_LOGO_JPEG-removebg-preview.png" class="w-50" alt="logo">
       </div>
@@ -44,17 +45,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto gap-1">
-        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+      <ul class="navbar-nav mx-auto gap-1 fs-5">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">PACKAGES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">ITINERARY</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html">PACKAGES</a></li>
         <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
       </ul>
       <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <a class="navbar-brand d-flex align-items-center gap-2 py-0" href="index.html">
       <div class="d-flex justify-content-end">
         <img src="assets/imgs/SSA_LOGO_JPEG-removebg-preview.png" class="w-50" alt="">
       </div>
@@ -120,90 +120,123 @@
     </div>
   </section>
 
-  <!-- ═══ SERVICES SECTION ═══ -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="eyebrow">What We Offer</span>
-        <h2 class="section-title mt-2">Our Core Travel Services</h2>
-      </div>
+  <!-- SERVICES -->
+<div class="section">
+  <div class="section-head">
+    <div class="eyebrow2">What We Offer</div>
+    <h2>Our Core Travel Services</h2>
+  </div>
+  <div class="cards-grid">
 
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-mortarboard"></i>
-            </div>
-            <div class="service-card-title">Educational Tours</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Well-planned educational tours to historical, cultural, scientific and geographical destinations that enhance learning beyond the classroom.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-building-gear"></i>
-            </div>
-            <div class="service-card-title">Industrial Visits</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Organized industrial visits to allow students to explore industries, understand operations and gain practical knowledge.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-building"></i>
-            </div>
-            <div class="service-card-title">School Excursions</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Fun, safe and informative excursions for schools that encourage teamwork, exploration and real-world learning.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-backpack4"></i>
-            </div>
-            <div class="service-card-title">College Trips</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Custom college trips for academic, cultural and recreational purposes with complete planning and support.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Card 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-people-fill"></i>
-            </div>
-            <div class="service-card-title">Group Travel Management</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Complete management of group travel including logistics, coordination, scheduling and 24/7 support.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Card 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon-wrap">
-              <i class="bi bi-bus-front"></i>
-            </div>
-            <div class="service-card-title">Transport &amp; Accommodation</div>
-            <div class="service-card-divider"></div>
-            <p class="service-card-text">Comfortable transport options and quality accommodation to ensure a safe and pleasant stay.</p>
-            <a href="#" class="btn-learn">Learn More <i class="bi bi-arrow-right"></i></a>
-          </div>
+    <!-- Card 1 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=600&q=80" alt="Educational Tours">
+        <div class="card-ribbon">Educational</div>
+        <div class="card-icon-badge"><i class="bi bi-building" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Educational Tours</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Well-planned educational tours to historical, cultural, scientific and geographical destinations that enhance learning beyond the classroom.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">Pan India</span>
+          <a href="single-service.html" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Card 2 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80" alt="Industrial Visits">
+        <div class="card-ribbon">Industrial</div>
+        <div class="card-icon-badge"><i class="bi bi-buildings-fill" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Industrial Visits</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Organized industrial visits to allow students to explore industries, understand operations and gain practical knowledge.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">Hands-On</span>
+          <a href="#" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80" alt="School Excursions">
+        <div class="card-ribbon">Excursions</div>
+        <div class="card-icon-badge"><i class="bi bi-backpack" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">School Excursions</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Fun, safe and informative excursions for schools that encourage teamwork, exploration and real-world learning.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">All Ages</span>
+          <a href="#" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80" alt="College Trips">
+        <div class="card-ribbon">College</div>
+        <div class="card-icon-badge"><i class="bi bi-patch-check-fill" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">College Trips</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Custom college trips for academic, cultural and recreational purposes with complete planning and support.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">Customized</span>
+          <a href="#" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Group Travel Management">
+        <div class="card-ribbon">Group Travel</div>
+        <div class="card-icon-badge"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Group Travel Management</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Complete management of group travel including logistics, coordination, scheduling and 24/7 support.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">24/7 Support</span>
+          <a href="#" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="svc-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" alt="Transport and Accommodation">
+        <div class="card-ribbon">Transport</div>
+        <div class="card-icon-badge"><i class="bi bi-bus-front" aria-hidden="true"></i></div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Transport &amp; Accommodation</div>
+        <div class="card-divider"></div>
+        <p class="card-text">Comfortable transport options and quality accommodation to ensure a safe and pleasant stay throughout the journey.</p>
+        <div class="card-footer-row">
+          <span class="card-badge">Comfortable</span>
+          <a href="#" class="btn-learn">Learn More <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- ═══ WHY CHOOSE US ═══ -->
   <section class="advantage-section" id="why-us">
@@ -306,7 +339,7 @@
   <!-- ===== FOOTER ===== -->
 <footer class="pt-5 pb-0">
   <div class="container-fluid px-4">
-    <div class="row g-4 pb-4">
+    <div class="row g-4 pb-4 justify-content-center">
       <!-- Brand -->
       <div class="col-12 col-md-3">
         <div class="d-flex align-items-center gap-2 mb-3">
@@ -350,7 +383,7 @@
       <div class="col-12 col-md-3">
         <h6 class="mb-3">CONTACT INFO</h6>
         <a href="tel:91-9414018109"><i class="bi bi-telephone-fill me-2 text-warning"></i>91-9414018109</a>
-        <a href="mailto:info@edu-travel.in"><i class="bi bi-envelope-fill me-2 text-warning"></i>info@edu-travel.in</a>
+        <a href="mailto:info@edu-travel.in"><i class="bi bi-envelope-fill me-2 text-warning"></i>info@ss-travel.in</a>
         <div class="d-flex align-items-start gap-2 mb-2">
           <i class="bi bi-geo-alt-fill text-warning mt-1"></i>
           <span class="footer-desc">SARVA SIDDHA ADVENTURES PVT. LTD.<br> BB-6, Anita Colony, Bajaj Nagar, Jaipur,
@@ -362,7 +395,7 @@
         </div>
         <a href="#"><i class="bi bi-clock-fill me-2 text-warning"></i>Mon–Sat: 10:00 AM – 8:00 PM</a>
       </div>
-      <!-- Map -->
+      <!-- Map
       <div class="col-12 col-md-2">
         <h6 class="mb-3">OUR LOCATION</h6>
         <div class="rounded overflow-hidden border border-secondary" style="height:120px;background:#1a3a5c;display:flex;align-items:center;justify-content:center;">
@@ -371,16 +404,24 @@
             <div class="footer-desc mt-1" style="font-size:11px;">Jaipur, Rajasthan</div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Footer Bottom -->
   <div class="footer-bottom py-3 mt-2 text-center">
     <div class="container-fluid px-4">
-      <span>&copy; 2024 EDU TRAVEL. All Rights Reserved. | Designed for Educational Excellence</span>
+      <span>&copy; 2026 SS TRAVEL. All Rights Reserved.</span>
     </div>
   </div>
 </footer>
+
+<!-- Floating WhatsApp & Call Buttons -->
+<a href="https://wa.me/919001236239" class="float-btn float-wa-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<a href="tel:+919001236239" class="float-btn float-call-btn float-call" title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>

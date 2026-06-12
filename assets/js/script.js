@@ -78,3 +78,16 @@
       goTo(0);
       startAuto();
     })();
+
+
+    // Partner's Slider
+    /* Sync partners dot active state with Bootstrap carousel */
+(function () {
+  var carousel = document.getElementById('partnersCarousel');
+  if (!carousel) return;
+  carousel.addEventListener('slide.bs.carousel', function (e) {
+    document.querySelectorAll('.pcarousel-dot').forEach(function (dot, i) {
+      dot.classList.toggle('active', i === e.to);
+    });
+  });
+}());

@@ -22,54 +22,6 @@
       margin: 0;
     }
 
-    /* ── NAVBAR ── */
-    .navbar-brand span.brand-edu {
-      color: var(--clr-accent);
-      font-weight: 800;
-    }
-
-    .navbar-brand span.brand-travel {
-      color: var(--clr-primary);
-      font-weight: 800;
-    }
-
-    .navbar-nav .nav-link {
-      color: var(--clr-primary) !important;
-      font-weight: 500;
-      font-size: 0.9rem;
-      padding-left: 1rem !important;
-      padding-right: 1rem !important;
-      transition: color 0.2s;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--clr-accent) !important;
-    }
-
-    .navbar-custom {
-      background: var(--clr-white);
-      border-bottom: 1px solid var(--clr-border);
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-    }
-
-    .btn-nav-cta {
-      background: var(--clr-accent);
-      color: var(--clr-white);
-      font-weight: 600;
-      border: none;
-      border-radius: 6px;
-      padding: 0.45rem 1.2rem;
-      font-size: 0.9rem;
-      transition: background 0.2s, transform 0.15s;
-    }
-
-    .btn-nav-cta:hover {
-      background: #d07d06;
-      color: var(--clr-white);
-      transform: translateY(-1px);
-    }
-
     /* ── EYEBROW LABEL ── */
     .eyebrow {
       font-size: 0.78rem;
@@ -189,89 +141,6 @@
       font-size: 0.75rem;
       color: var(--clr-muted);
       line-height: 1.4;
-    }
-
-    /* ── SERVICES SECTION ── */
-    .services-section {
-      background: var(--clr-bg);
-      padding: 5rem 0;
-    }
-
-    .service-card {
-      background: var(--clr-white);
-      border: 1px solid var(--clr-border);
-      border-radius: var(--radius-card);
-      padding: 2rem 1.5rem 1.5rem;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      transition: box-shadow 0.25s, transform 0.25s;
-    }
-
-    .service-card:hover {
-      box-shadow: var(--shadow-card);
-      transform: translateY(-4px);
-    }
-
-    .service-icon-wrap {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      background: var(--clr-bg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.2rem;
-    }
-
-    .service-icon-wrap i {
-      font-size: 1.8rem;
-      color: var(--clr-primary);
-    }
-
-    .service-card-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--clr-primary);
-      margin-bottom: 0.4rem;
-    }
-
-    .service-card-divider {
-      width: 32px;
-      height: 2.5px;
-      background: var(--clr-accent);
-      border-radius: 2px;
-      margin: 0 auto 0.8rem;
-    }
-
-    .service-card-text {
-      font-size: 0.85rem;
-      color: var(--clr-muted);
-      line-height: 1.65;
-      flex-grow: 1;
-    }
-
-    .btn-learn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      margin-top: 1.2rem;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--clr-primary);
-      border: 1.5px solid var(--clr-border);
-      border-radius: 6px;
-      padding: 0.42rem 1rem;
-      text-decoration: none;
-      transition: border-color 0.2s, color 0.2s, background 0.2s;
-    }
-
-    .btn-learn:hover {
-      border-color: var(--clr-accent);
-      color: var(--clr-accent);
-      background: var(--clr-accent-light);
     }
 
     /* ── WHY CHOOSE US ── */
@@ -414,58 +283,6 @@
       transform: translateY(-1px);
     }
 
-    /* ── FOOTER ── */
-    .footer {
-      background: var(--clr-primary);
-      padding: 3rem 0 1.5rem;
-      color: rgba(255,255,255,0.75);
-    }
-
-    .footer-brand {
-      font-size: 1.4rem;
-      font-weight: 800;
-    }
-
-    .footer-brand span {
-      color: var(--clr-accent);
-    }
-
-    .footer-tagline {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.55);
-      margin-top: 0.4rem;
-    }
-
-    .footer-heading {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--clr-white);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    .footer-link {
-      display: block;
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.65);
-      text-decoration: none;
-      margin-bottom: 0.45rem;
-      transition: color 0.2s;
-    }
-
-    .footer-link:hover {
-      color: var(--clr-accent);
-    }
-
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 1.2rem;
-      margin-top: 2rem;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.45);
-    }
-
     /* ── RESPONSIVE TWEAKS ── */
     @media (max-width: 991.98px) {
       .hero-title {
@@ -509,3 +326,39 @@
         grid-template-columns: 1fr;
       }
     }
+
+
+    /* Cards Section */
+
+    /* ── SECTION ── */
+.section{padding:52px 24px}
+.section-head{text-align:center;margin-bottom:36px}
+.eyebrow2{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.section-head h2{font-size:clamp(1.4rem,3.5vw,1.9rem);font-weight:800;color:var(--green);margin-top:6px}
+    /* ── CARDS GRID ── */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px;max-width:1320px;margin:0 auto}
+
+/* ── MAP-INDIA STYLE CARD ── */
+.svc-card{background: lightblue;border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
+.svc-card:hover{box-shadow:0 8px 28px rgba(44,95,14,.13);transform:translateY(-5px)}
+
+.card-img-wrap{position:relative;overflow:hidden;height:180px}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.svc-card:hover .card-img-wrap img{transform:scale(1.06)}
+
+/* green diagonal ribbon top-left */
+.card-ribbon{position:absolute;top:0;left:0;background:var(--green);color:var(--white);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-bottom-right-radius:10px}
+
+/* icon badge overlapping img bottom */
+.card-icon-badge{position:absolute;bottom:-18px;right:18px;width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;border:3px solid var(--white);box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.card-icon-badge i{font-size:20px;color:var(--white)}
+
+.card-body{padding:28px 18px 18px;flex:1;display:flex;flex-direction:column}
+.card-title{font-size:.95rem;font-weight:700;color:var(--green);margin-bottom:4px;line-height:1.3}
+.card-divider{width:32px;height:2.5px;background:var(--amber);border-radius:2px;margin:6px 0 10px}
+.card-text{font-size:.82rem;color:var(--muted);line-height:1.65;flex:1}
+.card-footer-row{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+.card-badge{font-size:11px;font-weight:600;color:var(--green-mid);background:var(--green-light);padding:3px 10px;border-radius:20px}
+.btn-learn{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--white);background:var(--green);border-radius:6px;padding:7px 14px;text-decoration:none;transition:background .2s}
+.btn-learn:hover{background:var(--green-mid)}
+.btn-learn i{font-size:13px}

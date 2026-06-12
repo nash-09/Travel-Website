@@ -1,0 +1,550 @@
+/* ── Design Tokens ── */
+    :root {
+      --navy:      #0D1B2A;
+      --gold:      #C9A84C;
+      --gold-lt:   #E8C97A;
+      --warm-wh:   #F8F5EF;
+      --sand:      #EDE8DF;
+      --slate:     #4A5568;
+      --slate-lt:  #718096;
+      --green-bg:  #F0FAF4;
+      --green-bdr: #B7E4C7;
+      --red-bg:    #FFF5F5;
+      --red-bdr:   #FEB2B2;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-sm: 0 2px 12px rgba(13,27,42,.07);
+      --shadow-md: 0 6px 28px rgba(13,27,42,.12);
+    }
+
+    /* ── Base ── */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--warm-wh);
+      color: var(--navy);
+    }
+
+    h1, h2, h3, h4, .display-font {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* ── Hero ── */
+    .pkg-hero {
+      position: relative;
+      height: 520px;
+      overflow: hidden;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+
+    .pkg-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pkg-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(13,27,42,.18) 0%, rgba(13,27,42,.72) 100%);
+    }
+
+    .pkg-hero-content {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      right: 0;
+    }
+
+    .pkg-hero-eyebrow {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold-lt);
+    }
+
+    .pkg-hero-title {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+    }
+
+    /* Gold ribbon badge */
+    .pkg-ribbon {
+      position: absolute;
+      top: 36px;
+      right: -32px;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Inter', sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 10px 52px;
+      transform: rotate(35deg);
+      transform-origin: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,.22);
+      white-space: nowrap;
+    }
+
+    /* ── Breadcrumb ── */
+    .pkg-breadcrumb {
+      font-size: .8rem;
+      color: var(--slate-lt);
+    }
+
+    .pkg-breadcrumb a {
+      color: var(--slate);
+      text-decoration: none;
+    }
+
+    .pkg-breadcrumb a:hover {
+      color: var(--gold);
+    }
+
+    /* ── Sticky Booking Card ── */
+    .booking-card {
+      background: #fff;
+      border: 1.5px solid var(--sand);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .booking-card-header {
+      background: var(--navy);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      padding: 22px 24px 18px;
+    }
+
+    .booking-price-label {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold-lt);
+      opacity: .85;
+    }
+
+    .booking-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .booking-price sup {
+      font-size: 1.1rem;
+      top: -10px;
+    }
+
+    .booking-per {
+      font-size: .78rem;
+      color: rgba(255,255,255,.6);
+      margin-top: 2px;
+    }
+
+    .booking-card-body {
+      padding: 22px 24px;
+    }
+
+    .booking-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .82rem;
+      color: var(--slate);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .booking-meta-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .booking-meta-row i {
+      color: var(--gold);
+      font-size: 1rem;
+      width: 18px;
+      flex-shrink: 0;
+    }
+
+    .btn-book {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: .88rem;
+      letter-spacing: .04em;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 13px 0;
+      width: 100%;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-book:hover {
+      background: var(--gold-lt);
+      transform: translateY(-1px);
+    }
+
+    .btn-enquire {
+      background: transparent;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: .82rem;
+      border: 1.5px solid var(--navy);
+      border-radius: var(--radius-md);
+      padding: 11px 0;
+      width: 100%;
+      transition: background .2s, color .2s;
+    }
+
+    .btn-enquire:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ── Section Titles ── */
+    .section-eyebrow {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-top: 4px;
+    }
+
+    .section-divider {
+      width: 40px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 12px 0 20px;
+    }
+
+    /* ── Overview Stats ── */
+    .stat-card {
+      background: #fff;
+      border: 1.5px solid var(--sand);
+      border-radius: var(--radius-md);
+      padding: 18px 16px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      height: 100%;
+    }
+
+    .stat-card i {
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-top: 6px;
+    }
+
+    .stat-label {
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--slate-lt);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ── Highlights ── */
+    .highlight-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .highlight-item:last-child {
+      border-bottom: none;
+    }
+
+    .highlight-icon {
+      width: 38px;
+      height: 38px;
+      background: var(--sand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .highlight-icon i {
+      color: var(--gold);
+      font-size: 1rem;
+    }
+
+    .highlight-text strong {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--navy);
+      display: block;
+    }
+
+    .highlight-text span {
+      font-size: .8rem;
+      color: var(--slate-lt);
+    }
+
+    /* ── Itinerary ── */
+    .itinerary-item {
+      position: relative;
+      padding-left: 54px;
+      padding-bottom: 32px;
+    }
+
+    .itinerary-item::before {
+      content: '';
+      position: absolute;
+      left: 17px;
+      top: 36px;
+      bottom: 0;
+      width: 2px;
+      background: var(--sand);
+    }
+
+    .itinerary-item:last-child::before {
+      display: none;
+    }
+
+    .itinerary-day {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: .72rem;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .itinerary-day span {
+      font-size: .6rem;
+      font-weight: 400;
+    }
+
+    .itinerary-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .itinerary-sub {
+      font-size: .78rem;
+      color: var(--slate-lt);
+      margin-bottom: 6px;
+    }
+
+    .itinerary-desc {
+      font-size: .84rem;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+
+    .itinerary-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .itinerary-tag {
+      font-size: .7rem;
+      font-weight: 500;
+      color: var(--navy);
+      background: var(--sand);
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+
+    /* ── Inclusions / Exclusions ── */
+    .inc-exc-card {
+      border-radius: var(--radius-lg);
+      padding: 28px 26px;
+      height: 100%;
+    }
+
+    .inc-card {
+      background: var(--green-bg);
+      border: 1.5px solid var(--green-bdr);
+    }
+
+    .exc-card {
+      background: var(--red-bg);
+      border: 1.5px solid var(--red-bdr);
+    }
+
+    .inc-exc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .inc-title-icon {
+      color: #2F855A;
+    }
+
+    .exc-title-icon {
+      color: #C53030;
+    }
+
+    .inc-exc-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+    }
+
+    .inc-exc-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: .84rem;
+      color: var(--slate);
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(0,0,0,.07);
+    }
+
+    .inc-exc-list li:last-child {
+      border-bottom: none;
+    }
+
+    .inc-exc-list li i {
+      font-size: .9rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .inc-icon {
+      color: #38A169;
+    }
+
+    .exc-icon {
+      color: #E53E3E;
+    }
+
+    /* ── Hotel Gallery Thumbnails ── */
+    .hotel-thumb {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--sand);
+    }
+
+    .hotel-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s;
+    }
+
+    .hotel-thumb:hover img {
+      transform: scale(1.04);
+    }
+
+    /* ── Reviews ── */
+    .review-card {
+      background: #fff;
+      border: 1.5px solid var(--sand);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .review-stars i {
+      color: var(--gold);
+      font-size: .85rem;
+    }
+
+    .review-text {
+      font-size: .83rem;
+      color: var(--slate);
+      line-height: 1.65;
+      margin-top: 10px;
+    }
+
+    .review-author {
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-top: 12px;
+    }
+
+    .review-date {
+      font-size: .72rem;
+      color: var(--slate-lt);
+    }
+
+    /* ── Important Notes ── */
+    .note-card {
+      background: #FFFBEB;
+      border: 1.5px solid #FBD38D;
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .note-card i {
+      color: #D97706;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .note-card p {
+      font-size: .82rem;
+      color: #7B4F00;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* ── Responsive Tweaks ── */
+    @media (max-width: 767.98px) {
+      .pkg-hero {
+        height: 340px;
+      }
+
+      .pkg-hero-content {
+        bottom: 28px;
+      }
+
+      .booking-card {
+        position: static;
+      }
+
+      .itinerary-item {
+        padding-left: 44px;
+      }
+    }
