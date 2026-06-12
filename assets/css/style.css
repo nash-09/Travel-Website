@@ -33,20 +33,50 @@ body { font-family: 'Poppins', sans-serif; }
 
 /* ══════════════════════════════
    TOP BAR
-══════════════════════════════ */
-.top-bar { background: var(--green); font-size: 12px; }
+   ══════════════════════════════ */
+.top-bar { background: var(--green) !important; font-size: 12px !important; }
+.top-bar, .top-bar a, .top-bar span, .top-bar i { font-family: 'Poppins', sans-serif !important; }
+.top-bar a { color: #fff !important; }
+.top-bar a:hover { color: var(--amber) !important; }
 
 /* ══════════════════════════════
    NAVBAR
-══════════════════════════════ */
+   ══════════════════════════════ */
+.navbar { background-color: #fff !important; }
+.navbar-brand img {
+  max-width: 140px !important;
+  width: auto !important;
+  height: auto !important;
+}
 .navbar-brand .brand-name { font-size: 1.3rem; font-weight: 800; color: var(--green); line-height: 1; }
 .navbar-brand .brand-sub  { font-size: 0.65rem; color: #666; }
-.navbar .nav-link          { font-size: 16px; font-weight: 500; color: #333 !important; }
+.navbar .nav-link          { font-size: 16px !important; font-weight: 500 !important; color: #333 !important; font-family: 'Poppins', sans-serif !important; }
 .navbar .nav-link.active,
 .navbar .nav-link:hover    { color: var(--amber) !important; }
-.btn-enquire               { background: var(--amber); color: #fff; font-size: 13px; font-weight: 600; border-radius: 4px; }
-.btn-enquire:hover         { background: var(--amber-dark); color: #fff; }
+.btn-enquire               { background: var(--amber) !important; color: #fff !important; font-size: 13px !important; font-weight: 600 !important; border-radius: 4px !important; font-family: 'Poppins', sans-serif !important; }
+.btn-enquire:hover         { background: var(--amber-dark) !important; color: #fff !important; }
 .font-size-20{ font-size: var(--bs-font);}
+
+/* Topbar & Logo Mobile Responsiveness */
+@media (max-width: 767.98px) {
+  .top-bar .container-fluid > .d-flex {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 10px !important;
+  }
+  .top-bar .container-fluid > .d-flex > div {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .top-bar .container-fluid > .d-flex > div > .font-size-20 {
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 5px;
+  }
+  .navbar-brand img {
+    max-width: 110px !important;
+  }
+}
 
 /* ══════════════════════════════
    HERO (legacy static hero — kept)
@@ -69,7 +99,7 @@ body { font-family: 'Poppins', sans-serif; }
 
 /* ══════════════════════════════
    SEARCH BAR
-══════════════════════════════ */
+   ══════════════════════════════ */
 .search-bar { background: #fff; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); margin-top: -30px; z-index: 10; }
 .search-bar .form-label    { font-size: 11px; color: #888; margin-bottom: 2px; }
 .search-bar .form-control,
@@ -77,6 +107,15 @@ body { font-family: 'Poppins', sans-serif; }
 .search-bar .divider       { border-left: 1px solid #eee; }
 .btn-send-inquiry          { background: var(--amber); color: #fff; font-weight: 700; font-size: 13px; border-radius: 4px; white-space: nowrap; }
 .btn-send-inquiry:hover    { background: var(--amber-dark); color: #fff; }
+
+@media (max-width: 767.98px) {
+  .search-bar .divider {
+    border-left: none !important;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    padding-left: 0 !important;
+  }
+}
 
 /* ══════════════════════════════
    SECTION TYPOGRAPHY
@@ -197,16 +236,17 @@ body { font-family: 'Poppins', sans-serif; }
 /* ══════════════════════════════
    FOOTER
 ══════════════════════════════ */
-footer                  { background-color: #EEF5E8 ;}
-footer .footer-brand    { font-size: 1.1rem; font-weight: 800; color: var(--green); }
-footer .footer-sub      { font-size: 11px; color: var(--green); }
-footer .footer-desc     { font-size: 12px; color: var(--green); }
-footer h6               { font-size: 13px; font-weight: 700; color: var(--green); letter-spacing: .5px; }
-footer a                { font-size: 12px; color: var(--green); text-decoration: none; display: block; margin-bottom: 4px; }
-footer a:hover          { color: var(--amber); }
-footer .footer-bottom   { background: var(--green); font-size: 12px; color: white; }
-footer .social-icon     { width: 30px; height: 30px; border-radius: 50%; background: #3a7a12; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 14px; text-decoration: none; }
-footer .social-icon:hover { background: var(--amber); color: #fff; }
+footer                  { background-color: #EEF5E8 !important;}
+footer, footer a, footer h6, footer span { font-family: 'Poppins', sans-serif !important; }
+footer .footer-brand    { font-size: 1.1rem !important; font-weight: 800 !important; color: var(--green) !important; }
+footer .footer-sub      { font-size: 11px !important; color: var(--green) !important; }
+footer .footer-desc     { font-size: 12px !important; color: var(--green) !important; }
+footer h6               { font-size: 13px !important; font-weight: 700 !important; color: var(--green) !important; letter-spacing: .5px !important; }
+footer a                { font-size: 12px !important; color: var(--green) !important; text-decoration: none !important; display: block !important; margin-bottom: 4px !important; }
+footer a:hover          { color: var(--amber) !important; }
+footer .footer-bottom   { background: var(--green) !important; font-size: 12px !important; color: white !important; }
+footer .social-icon     { width: 30px !important; height: 30px !important; border-radius: 50% !important; background: #3a7a12 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: white !important; font-size: 14px !important; text-decoration: none !important; }
+footer .social-icon:hover { background: var(--amber) !important; color: #fff !important; }
 
 /* ══════════════════════════════
    FLOATING BUTTONS

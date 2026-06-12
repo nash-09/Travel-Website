@@ -1,13 +1,13 @@
-  /* ─── Tokens ─── */
+/* ─── Tokens ─── */
     :root {
-      --navy:   #0d1f4c;
-      --gold:   #e6a817;
-      --gold-dk:#c98f0e;
+      --navy:   #2C5F0E;
+      --gold:   #D4820A;
+      --gold-dk:#B06A06;
       --white:  #ffffff;
-      --off:    #f4f7fc;
+      --off:    #EEF5E8;
       --muted:  #6b7a99;
       --radius: 10px;
-      --shadow: 0 4px 24px rgba(13,31,76,.10);
+      --shadow: 0 4px 24px rgba(44,95,14,.10);
     }
 
     /* ─── Base ─── */
@@ -21,7 +21,7 @@
 
     /* ─── Hero Section ─── */
     .hero-contact {
-      background: linear-gradient(120deg, var(--off) 0%, #e8edf8 100%);
+      background: linear-gradient(120deg, var(--off) 0%, #eef5e8 100%);
       padding: 5rem 0 0;
       overflow: hidden;
       position: relative;
@@ -265,6 +265,14 @@
     }
     .toast-success.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
     .toast-success i { color: var(--gold); font-size: 1.2rem; }
+
+    .footer-social a{
+      color: white;
+      font-size: 20px !important;
+    }
+    .footer-social a:hover{
+      color: #B06A06;
+    }
 
     /* ─── Responsive tweaks ─── */
     @media (max-width: 991.98px) {

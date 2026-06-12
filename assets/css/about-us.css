@@ -1,23 +1,23 @@
 /* ===== DESIGN TOKENS ===== */
     :root {
-      --navy:       #0d1f4e;
-      --navy-mid:   #162b6e;
-      --gold:       #e8880a;
-      --gold-light: #f5a623;
+      --navy:       #2C5F0E;
+      --navy-mid:   #3A7A12;
+      --gold:       #D4820A;
+      --gold-light: #EEF5E8;
       --white:      #ffffff;
-      --off-white:  #f8f9fc;
+      --off-white:  #EEF5E8;
       --text-dark:  #1a1a2e;
       --text-body:  #4a4a6a;
-      --border:     #e4e8f0;
+      --border:     #e0e8d8;
       --card-bg:    #ffffff;
-      --stats-bg:   #0d1f4e;
+      --stats-bg:   #2C5F0E;
 
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body:    'Inter', system-ui, sans-serif;
 
       --radius-card: 14px;
       --radius-icon: 50%;
-      --shadow-card: 0 4px 24px rgba(13, 31, 78, 0.08);
+      --shadow-card: 0 4px 24px rgba(44, 95, 14, 0.08);
       --transition:  0.25s ease;
     }
 
@@ -212,7 +212,7 @@
     .timeline-icon-wrap {
       width: 42px;
       height: 42px;
-      background: #eef2ff;
+      background: var(--gold-light);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -349,8 +349,8 @@
     }
 
     .vision-card .vm-icon-wrap {
-      background: #eef2ff;
-      border: 2px solid #c7d2fe;
+      background: var(--gold-light);
+      border: 2px solid #c2dbb0;
     }
 
     .mission-card .vm-icon-wrap {
@@ -409,13 +409,13 @@
     .why-icon-wrap {
       width: 54px;
       height: 54px;
-      background: #eef2ff;
+      background: var(--gold-light);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 1rem;
-      border: 2px solid #c7d2fe;
+      border: 2px solid #c2dbb0;
       transition: background var(--transition);
     }
 

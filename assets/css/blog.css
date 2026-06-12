@@ -1,17 +1,17 @@
   /* ─── TOKENS ─────────────────────────────────── */
     :root {
-      --navy:   #0d1f3c;
-      --gold:   #e6a817;
-      --gold-dark: #c8900d;
+      --navy:   #2C5F0E;
+      --gold:   #D4820A;
+      --gold-dark: #B06A06;
       --white:  #ffffff;
-      --light:  #f4f7fb;
+      --light:  #EEF5E8;
       --muted:  #6b7280;
-      --border: #e2e8f0;
+      --border: #e0e8d8;
       --text:   #1e293b;
       --font-display: 'Merriweather', serif;
       --font-body: 'Nunito Sans', sans-serif;
       --radius: 10px;
-      --shadow: 0 2px 16px rgba(13,31,60,.08);
+      --shadow: 0 2px 16px rgba(44,95,14,.08);
     }
 
     /* ─── BASE ─────────────────────────────────── */
@@ -22,7 +22,7 @@
 
     /* ─── HERO BANNER ────────────────────────────── */
     .blog-hero {
-      background: linear-gradient(120deg, #e8eef6 0%, #f4f7fb 55%, #dde7f3 100%);
+      background: linear-gradient(120deg, var(--light) 0%, #f4f7fb 55%, #ddecd3 100%);
       min-height: 280px;
       position: relative;
       overflow: hidden;

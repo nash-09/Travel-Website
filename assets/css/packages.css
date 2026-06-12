@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
     :root {
-      --saffron: #E8A020;
-      --saffron-light: #FDF3E1;
-      --saffron-dark: #C4861A;
-      --navy: #1A2744;
-      --navy-light: #243259;
+      --saffron: #D4820A;
+      --saffron-light: #EEF5E8;
+      --saffron-dark: #B06A06;
+      --navy: #2C5F0E;
+      --navy-light: #3A7A12;
       --slate: #5A6480;
       --snow: #FAFAFA;
       --white: #FFFFFF;
-      --border: #E8EBF4;
+      --border: #e0e8d8;
       --badge-green: #1B7A4E;
       --badge-green-bg: #E6F5EE;
     }
@@ -24,7 +24,7 @@
 
     /* ── HERO BANNER ── */
     .hero-packages {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #2A3F72 100%);
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #1a3a0e 100%);
       padding: 72px 0 60px;
       position: relative;
       overflow: hidden;
@@ -195,7 +195,7 @@
       position: relative;
       height: 200px;
       overflow: hidden;
-      background: linear-gradient(135deg, #E8EBF4, #C8D0E8);
+      background: linear-gradient(135deg, #EEF5E8, #C5DCB0);
       display: flex;
       align-items: center;
       justify-content: center;

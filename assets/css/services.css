@@ -1,14 +1,14 @@
 :root {
-      --clr-primary: #0d2359;
-      --clr-accent: #e8930a;
-      --clr-accent-light: #fff4e0;
-      --clr-bg: #f8f9fc;
+      --clr-primary: #2C5F0E;
+      --clr-accent: #D4820A;
+      --clr-accent-light: #EEF5E8;
+      --clr-bg: #EEF5E8;
       --clr-white: #ffffff;
       --clr-text: #2d2d2d;
       --clr-muted: #6b7280;
-      --clr-border: #e2e8f0;
+      --clr-border: #e0e8d8;
       --radius-card: 12px;
-      --shadow-card: 0 4px 20px rgba(13, 35, 89, 0.08);
+      --shadow-card: 0 4px 20px rgba(44, 95, 14, 0.08);
     }
 
     * {
@@ -278,7 +278,7 @@
     }
 
     .btn-cta-accent:hover {
-      background: #d07d06;
+      background: #B06A06;
       color: var(--clr-white);
       transform: translateY(-1px);
     }
@@ -316,6 +316,7 @@
       .stats-bar .col-6.col-md-3 {
         margin-bottom: 1rem;
       }
+      .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,2fr));gap:25px;max-width:1320px;margin:0 auto}
     }
 
     @media (max-width: 575.98px) {
@@ -325,6 +326,7 @@
       .advantage-grid {
         grid-template-columns: 1fr;
       }
+      .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100%,1fr)) !important;gap:25px;max-width:1320px;margin:0 auto}
     }
 
 
@@ -336,10 +338,10 @@
 .eyebrow2{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
 .section-head h2{font-size:clamp(1.4rem,3.5vw,1.9rem);font-weight:800;color:var(--green);margin-top:6px}
     /* ── CARDS GRID ── */
-.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px;max-width:1320px;margin:0 auto}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:25px;max-width:1320px;margin:0 auto}
 
 /* ── MAP-INDIA STYLE CARD ── */
-.svc-card{background: lightblue;border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
+.svc-card{background:#e0e8d8;border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
 .svc-card:hover{box-shadow:0 8px 28px rgba(44,95,14,.13);transform:translateY(-5px)}
 
 .card-img-wrap{position:relative;overflow:hidden;height:180px}
@@ -347,7 +349,7 @@
 .svc-card:hover .card-img-wrap img{transform:scale(1.06)}
 
 /* green diagonal ribbon top-left */
-.card-ribbon{position:absolute;top:0;left:0;background:var(--green);color:var(--white);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-bottom-right-radius:10px}
+.card-ribbon{position:absolute;top:0;left:0;background:var(--green-mid);color:#e0e8d8;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-bottom-right-radius:10px}
 
 /* icon badge overlapping img bottom */
 .card-icon-badge{position:absolute;bottom:-18px;right:18px;width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;border:3px solid var(--white);box-shadow:0 2px 8px rgba(0,0,0,.18)}
@@ -359,6 +361,6 @@
 .card-text{font-size:.82rem;color:var(--muted);line-height:1.65;flex:1}
 .card-footer-row{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
 .card-badge{font-size:11px;font-weight:600;color:var(--green-mid);background:var(--green-light);padding:3px 10px;border-radius:20px}
-.btn-learn{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--white);background:var(--green);border-radius:6px;padding:7px 14px;text-decoration:none;transition:background .2s}
-.btn-learn:hover{background:var(--green-mid)}
+.btn-learn{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:#ffffff;background:var(--green-mid);border-radius:6px;padding:7px 14px;text-decoration:none;transition:background .2s}
+.btn-learn:hover{background:var(--green); color: #e0e8d8;}
 .btn-learn i{font-size:13px}
