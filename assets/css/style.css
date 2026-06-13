@@ -733,7 +733,6 @@ body { font-family: 'Poppins', sans-serif; background: var(--clr-white); overflo
 }
 
 .slide1-img {
-  width: 100%;
   height: 500px;
   object-fit: cover;
   object-position: center;
@@ -866,7 +865,7 @@ body { font-family: 'Poppins', sans-serif; background: var(--clr-white); overflo
 
 @media (max-width: 767.98px) {
   .hero-banner  { overflow-x: hidden; }
-  .hero-slide   { padding: 32px 0 80px; min-height: auto; }
+  .hero-slide   { padding: 32px 0 80px; width: 100%; }
   .slide1-img   { height: 380px; }
   .hero-text-col{ text-align: center; padding: 0; order: 1; margin-bottom: 1.6rem; }
   .hero-tagline { font-size: 0.78rem; margin-bottom: 0.6rem; }
@@ -893,11 +892,11 @@ body { font-family: 'Poppins', sans-serif; background: var(--clr-white); overflo
 }
 
 @media (max-width: 575.98px) {
-  .hero-slide   { padding: 24px 0 76px; }
-  .slide1-img   { height: 300px; }
+  .hero-slide   { padding: 24px 0 76px; max-width: 100%;}
+  .slide1-img   { height: 650px; }
   .hero-heading { font-size: 1.5rem; }
-  .hero-desc    { font-size: 0.84rem; max-width: 100%; }
-  .hero-btn-row { flex-direction: column; align-items: center; gap: 0.55rem; padding: 0 1rem; }
+  .hero-desc    { font-size: 0.84rem;}
+  .hero-btn-row { flex-direction: row; align-items: center; gap: 0.55rem; padding: 0 1rem; }
   .btn-primary-hero, .btn-outline-hero { width: 100%; max-width: 100px; flex: none; font-size: 0.72rem; padding: 0.65rem 1rem; justify-content: center; text-align: center; }
   .hero-img-wrap { width: 100%; }
   .hero-img-wrap img { height: 180px; }
