@@ -12,8 +12,8 @@
       --card-bg:    #ffffff;
       --stats-bg:   #2C5F0E;
 
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'Inter', system-ui, sans-serif;
+      --font-display: 'Poppins', sans-serif;
+      --font-body:    'PoppinsNumbers', 'Inter', system-ui, sans-serif;
 
       --radius-card: 14px;
       --radius-icon: 50%;
@@ -86,8 +86,10 @@
     }
 
     .about-hero h1 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 800;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(1.75rem, 5vw, 3.2rem) !important;
+      font-weight: 800 !important;
+      font-style: normal !important;
     }
 
     .about-hero h1 span {

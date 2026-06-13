@@ -16,10 +16,14 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'PoppinsNumbers', 'Inter', sans-serif;
       color: var(--clr-text);
       background-color: var(--clr-white);
       margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .advantage-item-title, .cta-card-title, .card-title {
+      font-family: 'Poppins', sans-serif;
     }
 
     /* ── EYEBROW LABEL ── */
@@ -72,8 +76,10 @@
     }
 
     .hero-title {
-      font-size: 2.6rem;
-      font-weight: 800;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(1.75rem, 5vw, 3.2rem) !important;
+      font-weight: 800 !important;
+      font-style: normal !important;
       color: var(--clr-primary);
       line-height: 1.15;
     }

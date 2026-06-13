@@ -19,13 +19,13 @@
 
     /* ── Base ── */
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'PoppinsNumbers', 'Inter', sans-serif;
       background-color: var(--warm-wh);
       color: var(--navy);
     }
 
     h1, h2, h3, h4, .display-font {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     /* ── Hero ── */
@@ -65,8 +65,10 @@
     }
 
     .pkg-hero-title {
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      font-weight: 700;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(1.75rem, 5vw, 3.2rem) !important;
+      font-weight: 800 !important;
+      font-style: normal !important;
       color: #fff;
       line-height: 1.15;
     }
@@ -129,7 +131,7 @@
     }
 
     .booking-price {
-      font-family: 'Playfair Display', serif;
+      font-family: 'PoppinsNumbers', 'Playfair Display', serif;
       font-size: 2.1rem;
       font-weight: 700;
       color: #fff;
@@ -248,7 +250,7 @@
     }
 
     .stat-value {
-      font-family: 'Playfair Display', serif;
+      font-family: 'PoppinsNumbers', 'Playfair Display', serif;
       font-size: 1.35rem;
       font-weight: 700;
       color: var(--navy);
@@ -351,7 +353,7 @@
     }
 
     .itinerary-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--navy);
@@ -403,7 +405,7 @@
     }
 
     .inc-exc-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.2rem;
       font-weight: 700;
       display: flex;

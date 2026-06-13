@@ -17,7 +17,7 @@
     * { box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'PoppinsNumbers', 'Inter', sans-serif;
       background-color: var(--snow);
       color: var(--navy);
     }
@@ -48,9 +48,10 @@
       margin-bottom: 18px;
     }
     .hero-packages h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 700;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(1.75rem, 5vw, 3.2rem) !important;
+      font-weight: 800 !important;
+      font-style: normal !important;
       color: var(--white);
       line-height: 1.2;
       margin-bottom: 16px;
@@ -69,7 +70,7 @@
       margin-top: 36px;
     }
     .hero-stat .num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'PoppinsNumbers', 'Playfair Display', serif;
       font-size: 2rem;
       font-weight: 700;
       color: var(--saffron);
@@ -161,7 +162,7 @@
       color: var(--saffron);
     }
     .section-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: clamp(1.6rem, 3.5vw, 2.4rem);
       font-weight: 700;
       color: var(--navy);
@@ -209,7 +210,7 @@
       bottom: 0; left: 0; right: 0;
       background: linear-gradient(transparent, rgba(26,39,68,0.85));
       color: var(--white);
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.25rem;
       font-weight: 700;
       padding: 32px 16px 14px;
@@ -267,7 +268,7 @@
     .pkg-meta-item i { color: var(--saffron); font-size: 0.9rem; }
 
     .pkg-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.1rem;
       font-weight: 700;
       color: var(--navy);
@@ -309,7 +310,7 @@
     }
     .pkg-price .from { font-size: 0.68rem; color: var(--slate); text-transform: uppercase; letter-spacing: 0.5px; display: block; }
     .pkg-price .amount {
-      font-family: 'Playfair Display', serif;
+      font-family: 'PoppinsNumbers', 'Playfair Display', serif;
       font-size: 1.3rem;
       font-weight: 700;
       color: var(--navy);
@@ -424,7 +425,7 @@
       pointer-events: none;
     }
     .cta-strip h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Poppins', sans-serif;
       color: var(--white);
       font-size: clamp(1.5rem, 3vw, 2.1rem);
     }
@@ -454,21 +455,21 @@
     /* ── STICKY WHATSAPP ── */
     .whatsapp-fab {
       position: fixed;
-      bottom: 28px; right: 24px;
+      right: 18px;
+      bottom: 70px;
+      z-index: 999;
       background: #25D366;
-      color: var(--white);
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      text-decoration: none;
-      box-shadow: 0 4px 18px rgba(37,211,102,0.45);
-      z-index: 9999;
-      transition: transform 0.2s;
     }
     .whatsapp-fab:hover { transform: scale(1.1); color: var(--white); }
+    .float-call:hover { transform: scale(1.1); color: var(--white); }
+    /* ══════════════════════════════
+   FLOATING BUTTONS
+══════════════════════════════ */
+/* .float-whatsapp { position: fixed; right: 18px; bottom: 70px; z-index: 999; } */
+.float-call     { position: fixed; right: 18px; bottom: 20px; z-index: 999; }
+.float-btn      { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); text-decoration: none; }
+/* .float-wa-btn   { background: #25D366; } */
+.float-call-btn { background: var(--amber); }
 
     /* ── UTILITY ── */
     .divider-saffron {
